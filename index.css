@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: aqua;
+   max-width: 100%;
+    width: 400px;
+    position: relative;
+}
+.account{
+    display: flex;
+    gap: 100px;
+    background-color: rgb(8, 165, 165);
+    color: white;
+    height: 60px;
+    padding: 17px 30px;
+    font-size: 12px;
+}
+form{
+    padding: 17px 30px;
+}
+input{
+    background-color: transparent;
+    border: 2px solid rgb(1, 146, 146);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 14px;
+}
+#create-account{
+    cursor: pointer;
+}
+#log-in{
+    cursor: pointer;
+}
+.container .sign-container{
+    /* display: none; */
+    position: absolute;
+    transform: translateX(1000%);
+}
+
+ .container .sign-container.active{
+    /* display: block; */
+    position: relative;
+    transform: translateX(0);
+}
+
+.container .create-container.action{
+    /* display: none; */
+    position: absolute;
+    transform: translateX(1000%);
+}
+.container .create-container.passive{
+    /* display: block; */
+    position: relative;
+    transform: translateX(0);
+}
+.container .sign-container.passion{
+    /* display: none; */
+    position: absolute;
+    transform: translateX(1000%);
+}
+p{
+    padding-bottom: 5px;
+}
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px; 
+    position: relative;
+}
+i{
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+button{
+    border: none;
+    background-color: white;
+    padding: 10px 145px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(1, 146, 146);
+}
+.form-control.error .fa-check-circle{
+    display: none;
+
+}
+.form-control.error .fa-exclamation-circle{
+    color: red;
+    
+}
+.form-control.success .fa-exclamation-circle{
+    display: none;
+}
+.form-control.success .fa-check-circle{
+    color: green;
+
+}
+.form-control.success small{
+    display: none;
+}
+.form-control.success input{
+    border: 2px solid green;
+}
+.form-control.error input{
+    border: 2px solid red;   
+}
