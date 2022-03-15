@@ -1,3 +1,4 @@
+@import url('https://fonts.goggleapis.com/css?family=open+Sans:400,500&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -8,7 +9,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
 .container{
     background-color: aqua;
@@ -85,10 +87,14 @@ i{
 button{
     border: none;
     background-color: white;
-    padding: 10px 145px;
-    font-size: 15px;
     font-weight: 700;
     color: rgb(1, 146, 146);
+    width: 100%;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+}
 }
 .form-control.error .fa-check-circle{
     display: none;
