@@ -95,7 +95,7 @@ button{
     font-size: 16px;
     padding: 10px;
 }
-}
+
 .form-control.error .fa-check-circle{
     display: none;
 
@@ -119,4 +119,10 @@ button{
 }
 .form-control.error input{
     border: 2px solid red;   
+}
+
+@media(min-width:375px){
+   .account{
+       gap: 50px;
+   } 
 }
